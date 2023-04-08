@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\href{https://cesaralmendarez.com}{\Large Cesar E Almendarez}} &
+    \href{mailto:cesarealmendarez@gmail.com}{cesarealmendarez@gmail.com}\\
+    \href{https://cesaralmendarez.com}{cesaralmendarez.com} & \href{sms:+18182203266}{(818) 220-3266}
+\end{tabular*}
+
+
+%-----------SUMMARY-----------------
+\section{SUMMARY}
+Computer Science student eager to jump head first into the software industry. Looking to work on products bringing innovation, quality, and value, while appending to my ever-broadening skill set. All via grit and tenacity towards improvement!
+
+% %-----------EDUCATION-----------------
+\section{EDUCATION}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {California State University, Los Angeles}{Los Angeles, CA}
+        {Bachelor of Science, Computer Science}{Expected May 2025}
+
+        % \resumeItemListStart
+        
+        %     \resumeItem{Relevant Coursework}
+        %         {Programming Paradigms, Web and Internet Programming, Analysis of Algorithms, Multivariable Calculus, Linear Algebra}
+                
+        % \resumeItemListEnd
+              
+    \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+  
+    \resumeSubheading
+        {Done Did It}{Jan 2023}
+        {iOS To-Do List Application}{\href{https://apps.apple.com/us/app/done-did-it/id6445909068}{\faIcon{app-store-ios} App Store}}
+      
+        \resumeItemListStart
+            \resumeItem{}
+                {I launched a productivity app to the Apple App Store. I taught myself and incorporated \textbf{OOP} principles in \textbf{Swift} to establish a solid \textbf{MVC} architecture pattern which enabled dynamic interaction of user generated Lists and Tasks throughout the entire app. I utilized \textbf{Firebase} to rapidly implement phone number authentication, along with the ability for users to save/retrieve their data seamlessly and efficiently.}
+            \resumeItem{}
+              {There were many instances in which functionality like navigation, notifications, etc, was not able to be customized any further in \textbf{SwiftUI}. To mend these shortcomings, I combed through Apple Developer Documentation and integrated suitable methods in \textbf{UIKit} to achieve such desired custom features.}
+            \resumeItem{}
+              {Through the completion of this project, I strengthened my confidence in implementing Object Oriented data models, working with \textbf{Xcode}, writing efficient data structures, and gave iOS users an efficient way to organize themselves!}          
+              
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {News Nova}{Dec 2022}
+        {Live News Web App}{\href{https://newsnova.vercel.app/}{\faIcon{link} newsnova.vercel.app}}
+        
+        \resumeItemListStart
+            \resumeItem{}
+                {I launched a live news web app to \href{https://newsnova.vercel.app}{newsnova.vercel.app}. With my existing skills in \textbf{JavaScript}, I quickly picked up \textbf{TypeScript} to statically type definitions for News Nova's data. I generated Medistack REST API endpoints via StepZen, then accessed them via \textbf{GraphQL} queries all to fetch timely world news data on user request. With Next.js 13, I incorporated navigation, searching, and filtering capabilities that allowed the user to seamlessly find the news they care about. Finally, I made the site beautifully accessible with \textbf{TailwindCSS} and \textbf{HeadlessUI}.}      
+                
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {DeepASL}{Dec 2021}
+        {ASL Gesture Classification Program }{\href{https://github.com/cesarealmendarez/DeepASL}{\faIcon{link} GitHub}}
+        
+        \resumeItemListStart
+        
+            \resumeItem{}
+                {Utilizing \textbf{OpenCV} and \textbf{NumPy},  I developed a \textbf{Python} program that can classify live ASL alphabet hand gestures. The model is able to interpret letters A - Y with reasonable accuracy. I implemented depth perception and hand speed tracking algorithms to make the program as seamless as possible, as a result it has an intuitive understanding as to when a hand is in frame and when to trigger an interpretation. }
+              
+            \resumeItem{}
+              {Purposely refrained from incorporating any machine learning libraries to place an emphasis on learning the core architecture and mathematics that are rudimentary to Convolutional Neural Network models.}   
+
+            \resumeItem{}
+              {Open sourced on GitHub so anyone can clone and run on their machine with a webcam!}   
+                
+      \resumeItemListEnd 
+
+    \resumeSubHeadingListEnd
+
+%--------EMPLOYMENT------------
+\section{EMPLOYMENT}
+    \resumeSubHeadingListStart
+    
+    % \resumeSubheading
+    %     {EPIC Program at CSULA}{Los Angeles, CA}
+    %     {Data Collection and Administration Intern}{\href{https://github.com/cesarealmendarez/DeepASL}{\faIcon{link} Jan 2022 - Present}}
+        \resumeSubheading
+        {EPIC Program at CSULA}{Los Angeles, CA}
+        {Data Collection and Administration Intern}{Jan 2022 - Present}
+        
+        \resumeItemListStart
+
+            \resumeItem{Data Administration}
+              {: Facilitating the generation and reporting of site-wide user data. From user registration to volunteer time reporting, data is recorded and quantified to expedite user onboarding, outreach, tech support, and growth. }   
+              
+            \resumeItem{Web Developement}
+              {: Maintaining and building upon EPIC's {\href{https://www.volunteereasy.com/Site/eagleconnect}{\textbf{Eagle Connect}}} homepage to connect over \textbf{600} active CSULA student users with events and opportunities around their community. Leveraging basic \textbf{HTML} and \textbf{CSS} to add custom content and support accessibility.}          
+              
+      \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+  
+%--------LANGUAGES, TECH, INTERESTS------------
+\section{SKILLS \& INTERESTS}
+    \resumeSubHeadingListStart
+    
+        \item{
+            \textbf{Languages}{: JavaScript, TypeScript, Python, Java, C, Swift, PHP, SQL, GraphQL}
+            \hfill
+        }
+
+        \item{
+            \textbf{Frameworks \& Libraries}{: React, React Native, TailwindCSS, OpenCV, Next.js, SwiftUI, Flask}
+        }
+
+        \item{
+            \textbf{Other Tech}{: Xcode, GitHub, Firebase, OpenCV, Framer Motion, HeadlessUI}
+        }
+        
+        \item{
+            \textbf{Interests}{: Computer Vision, UI/UX, Natural Language Processing, Powerlifting, Long Distance Running}
+        }
+        
+    \resumeSubHeadingListEnd
+    
+\end{document}
